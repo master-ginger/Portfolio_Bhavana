@@ -1,0 +1,113 @@
+﻿/* ExperienceTimeline.css */
+.experience-timeline {
+    position: relative;
+    max-width: 900px;
+    margin: 2rem auto;
+    padding-left: 50px;
+}
+
+    .experience-timeline::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 30px;
+        width: 2px;
+        background: linear-gradient(to bottom, #61dafb, #2a7a9d);
+    }
+
+.experience-item {
+    position: relative;
+    margin-bottom: 40px;
+    padding-left: 40px;
+}
+
+.experience-icon {
+    position: absolute;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    background: #2a7a9d;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.5rem;
+    box-shadow: 0 0 0 5px rgba(42, 122, 157, 0.2);
+    z-index: 1;
+}
+
+.experience-content {
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+    position: relative;
+}
+
+    .experience-content::before {
+        content: '';
+        position: absolute;
+        left: -15px;
+        top: 30px;
+        width: 0;
+        height: 0;
+        border-top: 15px solid transparent;
+        border-bottom: 15px solid transparent;
+        border-right: 15px solid white;
+    }
+
+.experience-year {
+    color: #61dafb;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.experience-role {
+    color: #333;
+    margin: 0 0 5px 0;
+}
+
+.experience-company {
+    color: #666;
+    margin: 0 0 15px 0;
+    font-size: 1.1rem;
+}
+
+.experience-description {
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.experience-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.tag {
+    background: #f0f8ff;
+    color: #2a7a9d;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .experience-timeline {
+        padding-left: 30px;
+    }
+
+    .experience-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 1.2rem;
+    }
+
+    .experience-content {
+        padding: 20px;
+    }
+}
